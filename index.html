@@ -1,0 +1,359 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Lo Que Tu Cerebro No Te Dijo — Ebook de MO</title>
+<meta name="description" content="13 patrones psicológicos reales que explican por qué haces lo que haces. Cada afirmación etiquetada como Seguro, Probable o Adivinando, con el estudio real citado.">
+<meta property="og:title" content="Lo Que Tu Cerebro No Te Dijo">
+<meta property="og:description" content="13 patrones psicológicos con estudios reales citados. Del canal Nadie Te Lo Dijo.">
+<meta property="og:image" content="https://theoficcialkid.github.io/nadietelodijo/og.jpg">
+<meta property="og:url" content="https://theoficcialkid.github.io/nadietelodijo/">
+<meta property="og:type" content="product">
+<meta name="theme-color" content="#2a0710">
+<link rel="preconnect" href="https://pay.hotmart.com">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Inter:wght@400;600&display=swap">
+<style>
+/* Layout: una sola columna editorial, fondo crimson profundo como la portada; MO a la derecha del hero en desktop */
+:root{
+  --crimson:#5E0F22; --crimson-deep:#2a0710; --ink:#1a0409;
+  --gold:#C9A24B; --cream:#F5EAD6; --yellow:#FFC93C; --navy:#1C2541;
+  --muted:#d9c6ad; --line:rgba(201,162,75,.28);
+  --seguro:#7fd19b; --probable:#FFC93C; --adivinando:#f08a7a;
+  --display:"Bebas Neue", Impact, "Arial Narrow", sans-serif;
+  --serif:"Playfair Display", Georgia, "Times New Roman", serif;
+  --ui:"Inter", system-ui, -apple-system, "Segoe UI", sans-serif;
+  color-scheme:dark;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{animation:none!important;transition:none!important}}
+body{margin:0;background:var(--crimson-deep);color:var(--cream);font:400 18px/1.65 var(--serif);-webkit-font-smoothing:antialiased}
+img{max-width:100%;display:block}
+a{color:var(--yellow)}
+.wrap{max-width:1080px;margin:0 auto;padding-left:max(20px, env(safe-area-inset-left,0px));padding-right:max(20px, env(safe-area-inset-right,0px))}
+.narrow{max-width:680px}
+section{padding-block:72px}
+h1,h2,h3{font-family:var(--display);font-weight:400;letter-spacing:.01em;line-height:.95;margin:0;text-wrap:balance}
+h2{font-size:clamp(40px,6vw,64px)}
+.eyebrow{font:600 12px/1 var(--ui);letter-spacing:.18em;text-transform:uppercase;color:var(--gold);margin:0 0 18px}
+p{margin:0 0 1em}
+.lead{font-size:clamp(19px,2.2vw,22px);color:var(--cream)}
+.muted{color:var(--muted)}
+
+/* HERO */
+.hero{background:radial-gradient(120% 90% at 70% 40%, #7a1530 0%, var(--crimson) 35%, var(--crimson-deep) 80%);padding-block:56px 72px;overflow:hidden}
+.hero-grid{display:grid;grid-template-columns:1.1fr .9fr;gap:48px;align-items:center}
+.hero h1{font-size:clamp(64px,10vw,124px);color:#fff}
+.hero h1 span{color:var(--yellow)}
+.rule{width:96px;height:3px;background:var(--gold);margin:22px 0}
+.hero .sub{font-style:italic;font-size:clamp(19px,2.4vw,24px);color:var(--muted);max-width:30ch}
+.brand{font:400 22px/1 var(--display);letter-spacing:.04em;margin-bottom:28px;color:#fff}
+.brand b{color:var(--yellow);font-weight:400}
+.cover{border-radius:6px;box-shadow:0 30px 60px -20px rgba(0,0,0,.7),0 0 0 1px var(--line);transform:rotate(1.5deg);max-width:420px;margin-left:auto}
+.buybox{display:flex;flex-wrap:wrap;align-items:center;gap:14px 22px;margin-top:30px}
+.price{font:400 46px/1 var(--display);color:#fff}
+.price small{display:block;font:400 13px/1.4 var(--ui);color:var(--muted);letter-spacing:0}
+.btn{appearance:none;border:0;cursor:pointer;background:var(--yellow);color:var(--ink);font:400 24px/1 var(--display);letter-spacing:.06em;padding:18px 34px;border-radius:4px;box-shadow:0 6px 0 #b8861b;transition:transform .12s, box-shadow .12s;text-decoration:none;display:inline-block}
+.btn:hover{transform:translateY(-2px);box-shadow:0 8px 0 #b8861b}
+.btn:active{transform:translateY(4px);box-shadow:0 2px 0 #b8861b}
+.btn:focus-visible,.x:focus-visible{outline:3px solid #fff;outline-offset:3px}
+.trust{font:400 13px/1.5 var(--ui);color:var(--muted);margin-top:16px;display:flex;flex-wrap:wrap;gap:6px 18px}
+.trust span::before{content:"✓ ";color:var(--gold)}
+
+/* RIGOR LABELS */
+.labels{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:36px}
+.lab{border:1px solid var(--line);padding:22px;border-radius:4px;background:rgba(0,0,0,.18);min-width:0}
+.tag{display:inline-block;font:600 12px/1 var(--ui);letter-spacing:.12em;text-transform:uppercase;padding:7px 10px;border-radius:2px;color:var(--ink);margin-bottom:12px}
+.t-s{background:var(--seguro)}.t-p{background:var(--probable)}.t-a{background:var(--adivinando)}
+.lab p{font-size:16px;margin:0;color:var(--muted)}
+.lab strong{color:var(--cream);font-weight:600}
+
+/* SAMPLE */
+.sample{background:var(--cream);color:var(--ink)}
+.sample .eyebrow{color:var(--crimson)}
+.sample h2{color:var(--crimson)}
+.page{background:#fffaf0;border:1px solid #e3d3b5;padding:clamp(24px,5vw,48px);margin-top:28px;box-shadow:0 20px 40px -24px rgba(94,15,34,.4);position:relative}
+.page .cap{font:400 18px/1 var(--display);letter-spacing:.08em;color:var(--crimson);margin-bottom:6px}
+.page h3{font-size:34px;color:var(--ink);margin-bottom:18px}
+.page .ilab{font:600 11px/1 var(--ui);letter-spacing:.1em;background:var(--probable);padding:4px 7px;border-radius:2px;vertical-align:2px;margin-right:6px}
+.fade{position:absolute;left:0;right:0;bottom:0;height:110px;background:linear-gradient(transparent,#fffaf0)}
+
+/* TOC */
+.toc{display:grid;grid-template-columns:repeat(2,1fr);gap:34px 40px;margin-top:40px}
+.toc h3{font-size:26px;color:var(--gold);margin-bottom:12px}
+.toc h3 em{font:600 12px/1 var(--ui);letter-spacing:.14em;color:var(--muted);display:block;margin-bottom:6px;font-style:normal}
+.toc ol{margin:0;padding:0;list-style:none}
+.toc li{display:grid;grid-template-columns:34px 1fr;gap:4px;padding:10px 0;border-top:1px solid var(--line);font-size:17px}
+.toc li b{font:400 22px/1.1 var(--display);color:var(--yellow)}
+.toc li small{display:block;font:400 13px/1.4 var(--ui);color:var(--muted);margin-top:2px}
+
+/* WHO */
+.who{background:var(--navy)}
+.cols{display:grid;grid-template-columns:repeat(3,1fr);gap:28px;margin-top:32px}
+.cols div{min-width:0}
+.cols h3{font-size:28px;color:var(--yellow);margin-bottom:8px}
+.cols p{font-size:16px;color:#cfd3e6;margin:0}
+
+/* FAQ */
+details{border-top:1px solid var(--line);padding:18px 0}
+details:last-child{border-bottom:1px solid var(--line)}
+summary{cursor:pointer;font:600 19px/1.4 var(--serif);list-style:none;display:flex;justify-content:space-between;gap:16px}
+summary::after{content:"+";font:400 28px/1 var(--display);color:var(--gold)}
+details[open] summary::after{content:"–"}
+details p{margin:12px 0 0;color:var(--muted);font-size:17px}
+
+/* FINAL */
+.final{background:radial-gradient(90% 120% at 50% 0%, #7a1530, var(--crimson-deep) 70%);text-align:center}
+.final h2{font-size:clamp(46px,8vw,88px);color:#fff}
+.final .buybox{justify-content:center}
+footer{padding-block:28px calc(28px + env(safe-area-inset-bottom,0px));font:400 13px/1.5 var(--ui);color:var(--muted);text-align:center;border-top:1px solid var(--line)}
+
+/* STICKY BAR (mobile) */
+.bar{position:fixed;left:0;right:0;bottom:0;z-index:40;background:rgba(26,4,9,.96);backdrop-filter:blur(6px);border-top:1px solid var(--line);display:none;align-items:center;justify-content:space-between;gap:12px;padding:10px max(16px, env(safe-area-inset-right,0px)) calc(10px + env(safe-area-inset-bottom,0px)) max(16px, env(safe-area-inset-left,0px));transform:translateY(110%);transition:transform .25s}
+.bar.on{transform:none}
+.bar .p{font:400 30px/1 var(--display);color:#fff}
+.bar .p small{font:400 11px/1 var(--ui);color:var(--muted);display:block}
+.bar .btn{font-size:20px;padding:14px 22px}
+
+/* CHECKOUT MODAL */
+.modal{position:fixed;inset:0;z-index:100;display:flex;align-items:center;justify-content:center;background:rgba(10,2,4,.78);backdrop-filter:blur(3px);opacity:0;pointer-events:none;transition:opacity .2s}
+.modal.open{opacity:1;pointer-events:auto}
+.sheet{position:relative;width:min(560px,100%);height:min(92vh,900px);background:#fff;border-radius:10px;overflow:hidden;box-shadow:0 40px 80px rgba(0,0,0,.6);display:flex;flex-direction:column;transform:translateY(16px);transition:transform .25s}
+.modal.open .sheet{transform:none}
+.sheet-top{display:flex;align-items:center;justify-content:space-between;gap:10px;padding:10px 12px 10px 16px;background:var(--crimson);color:#fff;font:600 13px/1.3 var(--ui)}
+.sheet-top .lock::before{content:"🔒 "}
+.x{appearance:none;border:0;background:rgba(255,255,255,.14);color:#fff;width:36px;height:36px;border-radius:50%;font:400 22px/1 var(--ui);cursor:pointer;flex:none}
+.frame-box{position:relative;flex:1;background:#f6f6f6}
+.frame-box iframe{position:absolute;inset:0;width:100%;height:100%;border:0}
+.loading{position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:14px;color:#555;font:400 14px/1.4 var(--ui);text-align:center;padding:24px}
+.spin{width:34px;height:34px;border:3px solid #ddd;border-top-color:var(--crimson);border-radius:50%;animation:sp 0.8s linear infinite}
+@keyframes sp{to{transform:rotate(360deg)}}
+.sheet-foot{padding:8px 14px calc(8px + env(safe-area-inset-bottom,0px));font:400 12px/1.4 var(--ui);color:#666;background:#fafafa;border-top:1px solid #eee;text-align:center}
+.sheet-foot a{color:var(--crimson)}
+
+@media (max-width:820px){
+  .hero-grid{grid-template-columns:1fr;gap:36px}
+  .cover{max-width:300px;margin:0 auto;transform:none}
+  .hero-copy{order:2}
+  .labels,.cols{grid-template-columns:1fr}
+  .toc{grid-template-columns:1fr}
+  .bar{display:flex}
+  footer{padding-bottom:calc(96px + env(safe-area-inset-bottom,0px))}
+  .modal{align-items:flex-end}
+  .sheet{width:100%;height:100%;max-height:none;border-radius:0}
+  .sheet-top{padding-top:calc(10px + env(safe-area-inset-top,0px))}
+}
+</style>
+</head>
+<body>
+
+<header class="hero">
+  <div class="wrap hero-grid">
+    <div class="hero-copy">
+      <div class="brand">NADIE TE LO <b>DIJO</b> · con MO</div>
+      <h1>Lo que tu cerebro <span>no te dijo</span></h1>
+      <div class="rule"></div>
+      <p class="sub">13 patrones psicológicos reales que explican por qué haces lo que haces.</p>
+      <div class="buybox">
+        <button class="btn buy" type="button">Comprar el ebook</button>
+        <div class="price">US$12.90<small>Pago único · se cobra en tu moneda local</small></div>
+      </div>
+      <div class="trust"><span>PDF de 41 páginas</span><span>Acceso inmediato</span><span>Pago seguro con Hotmart</span></div>
+    </div>
+    <img class="cover" src="portada.webp" width="720" height="864" alt="Portada del ebook Lo Que Tu Cerebro No Te Dijo, con MO señalando al lector">
+  </div>
+</header>
+
+<main>
+  <section>
+    <div class="wrap narrow">
+      <p class="eyebrow">Por qué este libro es distinto</p>
+      <h2>Nada de “la ciencia dice” sin decirte qué ciencia</h2>
+      <p class="lead" style="margin-top:22px">Cada capítulo se construye sobre un estudio real, con autor y año. Y cada afirmación lleva una etiqueta para que sepas exactamente qué tan firme es lo que estás leyendo.</p>
+    </div>
+    <div class="wrap">
+      <div class="labels">
+        <div class="lab"><span class="tag t-s">Seguro</span><p><strong>Replicado muchas veces.</strong> Como la disonancia cognitiva de Festinger y Carlsmith (1959).</p></div>
+        <div class="lab"><span class="tag t-p">Probable</span><p><strong>Evidencia sólida con límites.</strong> Una muestra pequeña, un estudio correlacional o una replicación mixta.</p></div>
+        <div class="lab"><span class="tag t-a">Adivinando</span><p><strong>Una cifra que no pude verificar contra la fuente original.</strong> Te lo digo en vez de inventarla.</p></div>
+      </div>
+    </div>
+    <div class="wrap narrow" style="margin-top:36px">
+      <p class="muted">En varios capítulos vas a ver que lo que “todo el mundo sabe” no se sostiene: la regla del 5 a 1 en parejas, el mito de Kitty Genovese, el efecto Zeigarnik que no replica. Eso no es un defecto del libro. Es el punto del libro.</p>
+    </div>
+  </section>
+
+  <section class="sample">
+    <div class="wrap narrow">
+      <p class="eyebrow">Lee el inicio del capítulo 1</p>
+      <h2>Así suena MO</h2>
+      <div class="page">
+        <div class="cap">Capítulo 1</div>
+        <h3>El efecto foco de luz</h3>
+        <p>Tropezaste en la calle. Llevas una mancha en la camisa. Dijiste algo torpe en una reunión. Y durante el resto del día sientes que todo el mundo lo vio, lo recuerda, y lo va a seguir recordando.</p>
+        <p>No lo vieron. O si lo vieron, ya se les olvidó.</p>
+        <p>En el año 2000, Thomas Gilovich, Victoria Husted Medvec y Kenneth Savitsky le pusieron nombre a esto. Hicieron que estudiantes entraran a un salón lleno de gente con una camiseta vergonzosa, y antes les pidieron calcular cuántos la iban a notar.</p>
+        <p><span class="ilab">PROBABLE</span>Calcularon que cerca de la mitad del salón. La cifra real fue aproximadamente la mitad de esa estimación.</p>
+        <div class="fade"></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="indice">
+    <div class="wrap">
+      <p class="eyebrow">Contenido</p>
+      <h2>13 capítulos, 4 preguntas</h2>
+      <div class="toc">
+        <div>
+          <h3><em>Sección I</em>Cómo te ves a ti mismo</h3>
+          <ol>
+            <li><b>01</b><span>El efecto foco de luz<small>Gilovich, Medvec y Savitsky, 2000</small></span></li>
+            <li><b>02</b><span>La brecha del agrado<small>Boothby, Cooney, Sandstrom y Clark, 2018</small></span></li>
+            <li><b>03</b><span>Por qué lo familiar te gusta más<small>Zajonc, 1968 · Bornstein, 1989</small></span></li>
+          </ol>
+        </div>
+        <div>
+          <h3><em>Sección II</em>Cómo ves a los demás y te relacionas</h3>
+          <ol>
+            <li><b>04</b><span>La comparación que siempre pierdes<small>Festinger, 1954 · Vogel et al., 2014</small></span></li>
+            <li><b>05</b><span>El patrón que repites en cada relación<small>Hazan y Shaver, 1987</small></span></li>
+            <li><b>06</b><span>Infidelidad femenina vs masculina<small>GSS 2018 · Sagarin et al., 2012 y más</small></span></li>
+            <li><b>07</b><span>Por qué nadie actuó: el efecto espectador<small>Darley y Latané, 1968 · Fischer et al., 2011</small></span></li>
+          </ol>
+        </div>
+        <div>
+          <h3><em>Sección III</em>Cómo decide tu cerebro sin que te des cuenta</h3>
+          <ol>
+            <li><b>08</b><span>El error que cometes al juzgar a los demás<small>Jones y Harris, 1967</small></span></li>
+            <li><b>09</b><span>Por qué defiendes lo que ya sabes que fue un error<small>Festinger y Carlsmith, 1959</small></span></li>
+            <li><b>10</b><span>Por qué solo buscas pruebas de que tienes razón<small>Wason, 1960</small></span></li>
+            <li><b>11</b><span>Por qué te duele más perder que te alegra ganar<small>Tversky y Kahneman, 1992</small></span></li>
+          </ol>
+        </div>
+        <div>
+          <h3><em>Sección IV</em>Lo que tu cerebro no termina de soltar</h3>
+          <ol>
+            <li><b>12</b><span>Por qué lo malo pesa más que lo bueno<small>Baumeister et al., 2001</small></span></li>
+            <li><b>13</b><span>Por qué una tarea sin terminar no te deja en paz<small>Masicampo y Baumeister, 2011</small></span></li>
+          </ol>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="who">
+    <div class="wrap">
+      <p class="eyebrow">Para quién es</p>
+      <h2>Si alguna vez te preguntaste “¿por qué hice eso?”</h2>
+      <div class="cols">
+        <div><h3>Ves los videos de MO</h3><p>Algunos temas ya los viste en el canal. Ocho no se habían contado nunca: se investigaron solo para este libro.</p></div>
+        <div><h3>No quieres frases bonitas</h3><p>Cada capítulo cierra con algo concreto que puedes hacer con lo que acabas de entender.</p></div>
+        <div><h3>Quieres saber qué es real</h3><p>Al final hay una tabla con la fuente principal y el nivel de confianza de cada capítulo.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="wrap narrow">
+      <p class="eyebrow">Preguntas</p>
+      <h2 style="margin-bottom:24px">Antes de comprar</h2>
+      <details><summary>¿Cómo recibo el libro?</summary><p>Al confirmarse el pago, Hotmart te envía un correo con el acceso. Descargas el PDF y lo lees en el celular, la tablet o el computador.</p></details>
+      <details><summary>¿Puedo pagar en mi moneda?</summary><p>Sí. El checkout de Hotmart muestra el precio en la moneda de tu país y acepta tarjeta de crédito y débito. Según el país también puedes pagar con PSE, OXXO, Pix u otros medios locales.</p></details>
+      <details><summary>¿Es un pago único o una suscripción?</summary><p>Pago único. No hay cobros recurrentes.</p></details>
+      <details><summary>¿Necesito saber de psicología?</summary><p>No. Está escrito en español neutro, tuteándote, con la misma voz de los videos. Los estudios se explican sin tecnicismos.</p></details>
+      <details><summary>¿Y si no me gusta?</summary><p>La compra pasa por Hotmart, que tiene su política de garantía y reembolso. Puedes pedir la devolución desde tu cuenta de Hotmart dentro del plazo que indica el checkout.</p></details>
+    </div>
+  </section>
+
+  <section class="final">
+    <div class="wrap narrow">
+      <h2>Nombrar un patrón es el primer paso para dejar de obedecerlo</h2>
+      <div class="buybox" style="margin-top:32px">
+        <button class="btn buy" type="button">Quiero el ebook</button>
+        <div class="price" style="text-align:left">US$12.90<small>Pago único</small></div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">Nadie Te Lo Dijo · The Kid Company Group S.A.S. · Pagos procesados por Hotmart</div>
+</footer>
+
+<div class="bar" id="bar" aria-hidden="true">
+  <div class="p">US$12.90<small>PDF · acceso inmediato</small></div>
+  <button class="btn buy" type="button" tabindex="-1">Comprar</button>
+</div>
+
+<div class="modal" id="modal" role="dialog" aria-modal="true" aria-label="Pago seguro con Hotmart">
+  <div class="sheet">
+    <div class="sheet-top"><span class="lock">Pago seguro · Hotmart</span><button class="x" id="close" type="button" aria-label="Cerrar">×</button></div>
+    <div class="frame-box" id="frameBox">
+      <div class="loading" id="loading"><div class="spin"></div>Cargando el pago seguro…</div>
+    </div>
+    <div class="sheet-foot">¿Ves un error? <a id="retry" href="#">Reintentar</a> · <a id="fallback" href="#" target="_blank" rel="noopener">Abrir el pago en otra pestaña</a></div>
+  </div>
+</div>
+
+<script>
+(function(){
+  // Hotlink del producto (Hotmart ID 8807097)
+  var HOTLINK = "https://pay.hotmart.com/Q108189490Q";
+  // Conserva parámetros de campaña (utm_*, src, sck) que lleguen a la landing
+  var qs = new URLSearchParams(location.search), out = new URLSearchParams();
+  out.set("checkoutMode","2");
+  qs.forEach(function(v,k){ if(/^(utm_|src$|sck$|xcod$)/.test(k)) out.set(k,v); });
+  if(!out.has("src")) out.set("src","landing");
+  var URL_IFRAME = HOTLINK + "?" + out.toString();
+  var outTab = new URLSearchParams(out); outTab.delete("checkoutMode");
+  var URL_TAB = HOTLINK + "?" + outTab.toString();
+
+  var modal = document.getElementById("modal"), box = document.getElementById("frameBox"),
+      loading = document.getElementById("loading"), closeBtn = document.getElementById("close"),
+      fb = document.getElementById("fallback"), frame = null, lastFocus = null, slowTimer;
+  fb.href = URL_TAB;
+
+  function open(){
+    lastFocus = document.activeElement;
+    if(!frame){
+      frame = document.createElement("iframe");
+      frame.title = "Checkout de Hotmart";
+      frame.addEventListener("load", function(){ loading.hidden = true; clearTimeout(slowTimer); });
+      frame.src = URL_IFRAME;
+      box.appendChild(frame);
+      slowTimer = setTimeout(function(){ loading.innerHTML = 'El pago está tardando en cargar.<br><a href="'+URL_TAB+'" target="_blank" rel="noopener" style="color:#5E0F22;font-weight:600">Abrirlo en una pestaña nueva</a>'; }, 12000);
+    }
+    modal.classList.add("open");
+    document.documentElement.style.overflow = "hidden";
+    closeBtn.focus();
+  }
+  function close(){
+    modal.classList.remove("open");
+    document.documentElement.style.overflow = "";
+    if(lastFocus) lastFocus.focus();
+  }
+  document.getElementById("retry").addEventListener("click", function(e){
+    e.preventDefault();
+    if(frame){ frame.remove(); frame = null; }
+    loading.hidden = false;
+    loading.innerHTML = '<div class="spin"></div>Cargando el pago seguro…';
+    clearTimeout(slowTimer);
+    open();
+  });
+  document.querySelectorAll(".buy").forEach(function(b){ b.addEventListener("click", open); });
+  closeBtn.addEventListener("click", close);
+  modal.addEventListener("click", function(e){ if(e.target === modal) close(); });
+  document.addEventListener("keydown", function(e){ if(e.key === "Escape" && modal.classList.contains("open")) close(); });
+
+  // Barra de compra fija en móvil: aparece al pasar el hero
+  var bar = document.getElementById("bar"), hero = document.querySelector(".hero");
+  if("IntersectionObserver" in window){
+    new IntersectionObserver(function(en){ bar.classList.toggle("on", !en[0].isIntersecting); }).observe(hero);
+  }
+})();
+</script>
+</body>
+</html>
